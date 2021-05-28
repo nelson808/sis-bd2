@@ -34,6 +34,7 @@
             '     , ' . $autor .
             '     , ' . $classificacao .
             '     , ' . $cep .
+            '     , ' . $quantidade_paginas .
             /*TODO-2: Adicione cada variavel a consulta abaixo */
             '  FROM livros';
 
@@ -67,8 +68,8 @@
                     '<td>' . $registro[$autor] . '</td>' .
                     /* TODO-4: Adicione a tabela os novos registros. */
                     '<td>' . $registro[$classificacao] . '</td>' .
-                    '<td>' . $registro[$cep] . '</td>'.
-                    '<td>' . $registro[$quantidade_paginas] . '</td>';
+                    '<td>' . $registro[$cep] . '</td>' .
+                    '<td>' . $registro[$quantidade_paginas] . '</td>' ;
                 echo '</tr>';
             }
             echo '</table>';
