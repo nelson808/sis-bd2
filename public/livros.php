@@ -25,6 +25,7 @@
         $autor = 'autor';
         $classificacao = 'classificacao';
         $cep = 'cep';
+        $quantidade_paginas = 'quantidade_paginas';
         /*TODO-1: Adicione uma variavel para cada coluna */
 
 
@@ -52,6 +53,7 @@
             /* TODO-3: Adicione as variaveis ao cabeçalho da tabela */
             '        <th>' . $classificacao . '</th>' .
             '        <th>' . $cep . '</th>' .
+            '        <th>' . $quantidade_paginas . '</th>' .
             '    </tr>';
 
         echo $cabecalho;
@@ -65,7 +67,8 @@
                     '<td>' . $registro[$autor] . '</td>' .
                     /* TODO-4: Adicione a tabela os novos registros. */
                     '<td>' . $registro[$classificacao] . '</td>' .
-                    '<td>' . $registro[$cep] . '</td>';
+                    '<td>' . $registro[$cep] . '</td>'.
+                    '<td>' . $registro[$quantidade_paginas] . '</td>';
                 echo '</tr>';
             }
             echo '</table>';
