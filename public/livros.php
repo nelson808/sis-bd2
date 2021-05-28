@@ -26,7 +26,7 @@
         $classificacao = 'classificacao';
         $cep = 'cep';
         $quantidade_paginas = 'quantidade_paginas';
-        $lugar_de_publicacao = 'lugar_de_publicação';
+        $lugar_de_publicacao = 'lugar_de_publicacao';
 
         /*TODO-1: Adicione uma variavel para cada coluna */
 
