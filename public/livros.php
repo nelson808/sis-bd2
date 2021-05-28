@@ -26,6 +26,8 @@
         $classificacao = 'classificacao';
         $cep = 'cep';
         $quantidade_paginas = 'quantidade_paginas';
+        $lugar_de_publicacao = 'lugar_de_publicação';
+
         /*TODO-1: Adicione uma variavel para cada coluna */
 
 
@@ -35,6 +37,7 @@
             '     , ' . $classificacao .
             '     , ' . $cep .
             '     , ' . $quantidade_paginas .
+            '     , ' . $lugar_de_publicacao .
             /*TODO-2: Adicione cada variavel a consulta abaixo */
             '  FROM livros';
 
@@ -55,6 +58,7 @@
             '        <th>' . $classificacao . '</th>' .
             '        <th>' . $cep . '</th>' .
             '        <th>' . $quantidade_paginas . '</th>' .
+            '        <th>' . $lugar_de_publicacao . '</th>' .
             '    </tr>';
 
         echo $cabecalho;
@@ -69,7 +73,8 @@
                     /* TODO-4: Adicione a tabela os novos registros. */
                     '<td>' . $registro[$classificacao] . '</td>' .
                     '<td>' . $registro[$cep] . '</td>' .
-                    '<td>' . $registro[$quantidade_paginas] . '</td>' ;
+                    '<td>' . $registro[$quantidade_paginas] . '</td>' .
+                    '<td>' . $registro[$lugar_de_publicacao] . '</td>' ;
                 echo '</tr>';
             }
             echo '</table>';
